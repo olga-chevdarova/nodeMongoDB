@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/olga-chevdarova/nodeMongoDB#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node server.js --ignore dist/",
+    "dev": "webpack -wd",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,24 @@
   "bugs": {
     "url": "https://github.com/olga-chevdarova/nodeMongoDB/issues"
   },
-  "homepage": "https://github.com/olga-chevdarova/nodeMongoDB#readme"
+  "dependencies": {
+    "express": "^4.16.3",
+    "gh-pages": "^1.1.0",
+    "mongodb": "^3.1.0-beta4",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.10.2"
+  }
 }
